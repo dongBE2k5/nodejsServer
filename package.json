@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@xmldom/xmldom": "^0.9.8",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "docxtemplater": "^3.63.3",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "html-to-docx": "^1.8.0",
+    "jszip": "^3.10.1",
+    "multer": "^2.0.1",
+    "pizzip": "^3.2.0",
+    "xmldom": "^0.6.0"
+  }
+}
