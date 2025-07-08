@@ -4,7 +4,7 @@ const PizZip = require('pizzip');
 const Docxtemplater = require('docxtemplater');
 
 function generateDocx(data) {
-  const content = fs.readFileSync(path.resolve(__dirname, 'document.docx'), 'binary');
+  const content = fs.readFileSync(path.resolve(__dirname, 'document2.docx'), 'binary');
   const zip = new PizZip(content);
   const doc = new Docxtemplater(zip, { paragraphLoop: true, linebreaks: true });
 
@@ -24,6 +24,7 @@ try {
   const buf = doc.getZip().generate({ type: 'nodebuffer' });
   fs.writeFileSync(path.resolve(__dirname, 'output.docx'), buf);
 }
+
 
 // 👇 Export hàm
 module.exports = generateDocx;
